@@ -23,4 +23,4 @@ RUN apt-get update && apt-get install -y libcurl4-openssl-dev libssl-dev libjans
     apt-get autoremove -y --purge libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential gcc-5 g++-5 && \
     apt-get clean && rm -Rf /var/lib/apt/lists
 
-ENTRYPOINT /opt/ccminer/ccminer
+ENTRYPOINT [ "/opt/ccminer/ccminer" ]
